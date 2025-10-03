@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Aurelia's portfolio website showcasing web development projects, achievements, and contact information.">
+  <title>Aurelia's Portfolio</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a href="#main-content" class="skip-link" style="position:absolute;left:-10000px;top:auto;width:1px;height:1px;overflow:hidden;">Skip to main content</a>
+  <header>
+    <nav aria-label="Main navigation">
+      <button class="nav-toggle" aria-label="Open navigation menu" aria-controls="nav-menu" aria-expanded="false">
+        <span class="hamburger"></span>
+      </button>
+      <div id="nav-menu" class="nav-menu">
+        <ul>
+          <li><a href="#home" tabindex="0">Home</a></li>
+          <li><a href="#about" tabindex="0">About</a></li>
+          <li><a href="#contact" tabindex="0">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <h1>Discover Aurelia's Creative Web Portfolio</h1>
+  </header>
+
+  <main id="main-content">
+    <!--Main page-->
+    <section id="home">
+      <div class="home-flex">
+        <img src="images/stack-books.jpg" alt="Three stacked hardcover books with colored covers and visible bookmarks, arranged neatly on a light textured surface. The scene feels calm and studious, suggesting a focus on learning or reading. No visible text in the image." width="300" height="200">
+        <div>
+          <h2>Home</h2>
+          <p>Hello! I'm Aurelia, a passionate web developer driven by curiosity and creativity. Welcome to my portfolio—a space where innovation meets user experience. Here, you'll discover the projects, skills, and stories that shape my journey in web development. I invite you to explore, connect, and be inspired by the work I've done and the challenges I've embraced. Beyond web development, I'm excited to dive into the world of AI, eager to unlock new possibilities and shape the future of technology.</p>
+        </div>
+      </div>
+    </section>
+
+    <!--Information about my goals and achievements-->
+    <section id="about-me">
+      <h2>About</h2>
+      <p><b>My goals and achievements</b></p>
+      
+
+        <img src="images/studying.jpg" alt="Aurelia sits at a desk working on a laptop surrounded by open books in a quiet, well-lit room, appearing focused and determined to learn." width="200" height="200">
+        <div>
+          <p>I have always enjoyed working with computers. Whenever a new program was introduced at work, I was eager to explore and master it. Over time, my curiosity evolved into a genuine passion for web development. Through my role at Walmart, I completed online courses covering topics from GitHub to UX/UI, which greatly expanded my knowledge. These past few months have been transformative, as I’ve immersed myself in courses aligned with web development. The more I learn, the more inspired I am to venture further into web and software development. One of my biggest challenges was learning JavaScript, but with dedication, it’s become much more approachable—and I’m confident I’ll master it soon. I’m also excited to explore other programming languages to broaden my skill set.</p>
+          <p>My goal is to contribute to a company where we develop software or programs that make a global impact. The idea of creating something that could be used by millions and improve their lives is truly motivating. I have several ideas I’d love to bring to life, but I believe in taking things one step at a time and building a strong foundation for future success.</p>
+        </div>
+    </section>
+
+    <!--Skills section-->
+    <section id="skills">
+      <h2>Skills</h2>
+      <ul>
+        <li>HTML5</li>
+        <li>CSS3</li>
+        <li>JavaScript</li>
+        <li>Git & GitHub</li>
+        <li>Responsive Design</li>
+        <li>UX/UI Principles</li>
+        <li>C#</li>
+        <li>Wireframing</li>
+        <li>Figma</li>
+        <!-- Add more skills as needed -->
+      </ul>
+    </section>
+
+    <!--List of projects-->  
+    <article>
+      <img src="images/computer.png" alt="Desktop computer setup with a tower, monitor, keyboard, and mouse arranged side by side on a plain white background, conveying a clean and organized workspace" width="300" height="200">
+      <div>
+        <h2>Projects</h2>
+        <input type="text" id="project-filter" placeholder="Filter projects..." aria-label="Filter projects" style="margin-bottom: 18px; padding: 8px 12px; border-radius: 5px; border: 1px solid #bfcbe3; width: 100%; max-width: 350px;">
+        <p>Here are some of my projects:</p>
+        <ul class="project-list">
+          <li><span class="project-icon">🧮</span> Calculator</li>
+          <li><span class="project-icon">📝</span> To-Do List App</li>
+          <li><span class="project-icon">📰</span> Personal Blog</li>
+          <li><span class="project-icon">🌦️</span> Weather App</li>
+          <li><span class="project-icon">💼</span> Portfolio Website</li>
+          <li><span class="project-icon">🛒</span> E-commerce Site</li>
+        </ul>
+      </div>
+    </article>
+
+    <!--Contact form-->
+
+    <section id="contact">
+      <h2>Contact</h2>
+      <form action="#" method="post" aria-labelledby="contact-heading">
+        <fieldset>
+          <legend id="contact-heading">Contact Form</legend>
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" required tabindex="0" aria-required="true">
+          <br>
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required tabindex="0" aria-required="true">
+          <br>
+          <label for="message">Message:</label>
+          <textarea id="message" name="message" rows="4" required tabindex="0" aria-required="true"></textarea>
+          <br>
+          <button type="submit" tabindex="0">Send</button>
+        </fieldset>
+      </form>
+    </section>
+  </main>
+  <footer>
+    <address>
+      Contact us at <a href="mailto:info@mywebsite.com" aria-label="Email us">info@mywebsite.com</a>
+    </address>
+    <p>&copy; 2025 My Website</p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
